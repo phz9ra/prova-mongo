@@ -69,7 +69,7 @@ def apagar_produto():
     try:
         resultado = col.delete_one({"_id": ObjectId(id_str)})
         if resultado.deleted_count:
-            print("✅ Produto removido com sucesso!\n")
+            print("Produto removido com sucesso!\n")
         else:
             print("Produto não encontrado.\n")
     except Exception:
